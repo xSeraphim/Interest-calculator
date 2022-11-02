@@ -1,0 +1,87 @@
+div.sec-calculator {
+    color: #fff;
+    background-color: #00325b;
+    margin-bottom: 20px;
+    width:100%;
+}
+.element-invisible {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+}
+.calculator .calculator_step > h3 {
+    color: #fff;
+    background: #218383;
+    font-weight: 400;
+    padding: 10px 10px;
+    margin: 0;
+    font-size: 1.1em;
+    font-family: "Arvo",serif;
+}
+.calculator .calculator__form-input {
+    padding: 20px;
+}
+.calculator .calculator__form-input + .calculator__form-input {
+    border-top: 1px solid #fafafa;
+}
+.calculator .buttons [id^="edit-actions"] {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    border-top: 1px solid #fff;
+}
+.calculator .buttons [id^="edit-actions"] > input {
+    background-color: #bf280d;
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+.calculator .buttons [id^="edit-actions"] > input[id^="edit-reset"] {
+    background-color: #218383;
+}
+@media only screen and (min-width: 600px){
+.button {
+    width: auto;
+}}
+.button {
+    text-decoration: none;
+    text-shadow: none;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    line-height: 1.15em;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background: #218383;
+    height: 32px;
+    padding: 6px 12px;
+    cursor:pointer;
+}
+.results-container {
+    background-color: #218383;
+    padding: 20px 20px;
+}
+.results-container h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+}
+.results-container .calculator__results-amount {
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #8cb1b1;
+    padding-bottom: 20px;
+}
+.results-container .calculator__results-amount .amount {
+    font-weight: 700;
+    display: inline-block;
+    padding: 2px 7px;
+    background: #106060;
+    color:white;
+}
